@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Saya | Full Stack Developer</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+        Alex.dev
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#tentang" class="hover:text-indigo-400 transition-colors">Tentang</a>
+        <a href="#keahlian" class="hover:text-indigo-400 transition-colors">Keahlian</a>
+        <a href="#proyek" class="hover:text-indigo-400 transition-colors">Proyek</a>
+        <a href="#kontak" class="hover:text-indigo-400 transition-colors">Kontak</a>
+      </nav>
+      <a href="#kontak" class="inline-flex items-center justify-center px-4 py-2 rounded-full text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white transition-colors shadow-lg shadow-indigo-500/25">
+        Hubungi Saya
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <div class="flex-1 space-y-6 text-center md:text-left">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-medium">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Terbuka untuk Peluang Kerja
+      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+        Halo, Saya <span class="bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent">Alex Tanu</span>
+      </h1>
+      <p class="text-slate-400 text-base md:text-lg max-w-2xl">
+        Seorang **Full Stack Web Developer** yang berfokus pada pembuatan aplikasi web modern, cepat, dan responsif dengan pengalaman pengguna yang intuitif.
+      </p>
+      <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
+        <a href="#proyek" class="px-6 py-3 rounded-xl font-medium bg-indigo-600 hover:bg-indigo-500 text-white transition-all shadow-lg shadow-indigo-500/25 flex items-center gap-2">
+          Lihat Portfolio <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="#" class="px-6 py-3 rounded-xl font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all flex items-center gap-2">
+          Unduh CV <i data-lucide="download" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+    <div class="relative group">
+      <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=500" alt="Foto Profil" class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-2xl border border-slate-700/50" />
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-12 bg-slate-800/40 border-y border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <p class="text-3xl md:text-4xl font-bold text-white">3+</p>
+        <p class="text-xs md:text-sm text-slate-400 mt-1">Tahun Pengalaman</p>
+      </div>
+      <div>
+        <p class="text-3xl md:text-4xl font-bold text-white">25+</p>
+        <p class="text-xs md:text-sm text-slate-400 mt-1">Proyek Selesai</p>
+      </div>
+      <div>
+        <p class="text-3xl md:text-4xl font-bold text-white">15+</p>
+        <p class="text-xs md:text-sm text-slate-400 mt-1">Klien Puas</p>
+      </div>
+      <div>
+        <p class="text-3xl md:text-4xl font-bold text-white">99.9%</p>
+        <p class="text-xs md:text-sm text-slate-400 mt-1">Uptime Aplikasi</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keahlian / Skills -->
+  <section id="keahlian" class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+      <h2 class="text-3xl font-bold text-white">Keahlian Utama</h2>
+      <p class="text-slate-400 text-sm">Teknologi dan perangkat lunak yang saya gunakan sehari-hari untuk merancang dan membangun produk digital.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="p-6 rounded-2xl bg-slate-800/50 border border-slate-700/60 hover:border-indigo-500/50 transition-all group">
+        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+          <i data-lucide="code-2" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-2">Frontend Development</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">Membangun antarmuka pengguna yang interaktif, cepat, dan ramah aksesibilitas.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-700/60 text-slate-300">HTML / CSS</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-700/60 text-slate-300">Tailwind CSS</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-700/60 text-slate-300">JavaScript</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-700/60 text-slate-300">React.js</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p-6 rounded-2xl bg-slate-800/50 border border-slate-700/60 hover:border-indigo-500/50 transition-all group">
+        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-4 group-hover:bg-cyan-600 group-hover:text-white transition-colors">
+          <i data-lucide="server" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-2">Backend Development</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">Merancang arsitektur server, API RESTful, dan integrasi basis data yang tangguh.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-700/60 text-slate-300">Node.js</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-700/60 text-slate-300">Express</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-700/60 text-slate-300">PostgreSQL</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-700/60 text-slate-300">Prisma</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-6 rounded-2xl bg-slate-800/50 border border-slate-700/60 hover:border-indigo-500/50 transition-all group">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+          <i data-lucide="wrench" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-2">Tools & Workflow</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">Mengoptimalkan alur kerja pengembangan aplikasi dengan praktik DevOps dasar.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-700/60 text-slate-300">Git / GitHub</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-700/60 text-slate-300">Docker</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-700/60 text-slate-300">Figma</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-700/60 text-slate-300">Vercel</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyek / Projects -->
+  <section id="proyek" class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+      <h2 class="text-3xl font-bold text-white">Proyek Pilihan</h2>
+      <p class="text-slate-400 text-sm">Beberapa karya dan aplikasi yang baru-baru ini saya selesaikan.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Project Card 1 -->
+      <div class="bg-slate-800/40 rounded-2xl overflow-hidden border border-slate-700/60 group hover:border-slate-600 transition-all flex flex-col">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Dashboard SaaS" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500" />
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-semibold text-indigo-400">SaaS & Analytics</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Analytics Dashboard Pro</h3>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">Platform analisis data bisnis secara real-time yang memvisualisasikan matriks penjualan dan perilaku pengguna.</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-slate-700/40">
+            <div class="flex gap-2 text-xs text-slate-400">
+              <span>React</span> • <span>Tailwind</span> • <span>Node</span>
+            </div>
+            <a href="#" class="inline-flex items-center gap-1 text-sm text-indigo-400 hover:text-indigo-300 font-medium">
+              Demo <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="bg-slate-800/40 rounded-2xl overflow-hidden border border-slate-700/60 group hover:border-slate-600 transition-all flex flex-col">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=800" alt="Aplikasi E-Commerce" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500" />
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-semibold text-cyan-400">E-Commerce</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Luxe Fashion Store</h3>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">Toko online barang premium yang dilengkapi dengan integrasi gerbang pembayaran otomatis dan filter produk dinamis.</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-slate-700/40">
+            <div class="flex gap-2 text-xs text-slate-400">
+              <span>Next.js</span> • <span>Stripe</span> • <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="inline-flex items-center gap-1 text-sm text-indigo-400 hover:text-indigo-300 font-medium">
+              Demo <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak / Contact Section -->
+  <section id="kontak" class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="bg-gradient-to-r from-indigo-900/40 via-slate-800 to-slate-900 border border-slate-700/80 rounded-3xl p-8 md:p-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-4">
+          <h2 class="text-3xl font-bold text-white">Mari Bekerja Sama!</h2>
+          <p class="text-slate-300 text-sm leading-relaxed">Punya ide proyek menarik atau butuh bantuan untuk mengembangkan aplikasi Anda? Silakan hubungi saya kapan saja.</p>
+          <div class="space-y-3 pt-4">
+            <div class="flex items-center gap-3 text-slate-300 text-sm">
+              <div class="p-2 rounded-lg bg-slate-800 text-indigo-400"><i data-lucide="mail" class="w-5 h-5"></i></div>
+              <span>alex.dev@example.com</span>
+            </div>
+            <div class="flex items-center gap-3 text-slate-300 text-sm">
+              <div class="p-2 rounded-lg bg-slate-800 text-indigo-400"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+              <span>Jakarta, Indonesia</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Kontak Sederhana -->
+        <form class="space-y-4" onsubmit="event.preventDefault();">
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama Anda" class="w-full px-4 py-3 rounded-xl bg-slate-800/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Email</label>
+            <input type="email" placeholder="nama@email.com" class="w-full px-4 py-3 rounded-xl bg-slate-800/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Pesan</label>
+            <textarea rows="3" placeholder="Tuliskan pesan Anda..." class="w-full px-4 py-3 rounded-xl bg-slate-800/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm resize-none"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 px-6 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-all shadow-lg shadow-indigo-500/25">
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-8 px-6 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© 2026 Alex Tanu. Dibuat dengan Tailwind CSS.</p>
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:text-slate-300 transition-colors">GitHub</a>
+        <a href="#" class="hover:text-slate-300 transition-colors">LinkedIn</a>
+        <a href="#" class="hover:text-slate-300 transition-colors">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Inisialisasi Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
